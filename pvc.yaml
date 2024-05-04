@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csci5409-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeName: csci5409-pv
+  resources:
+    requests:
+      storage: 1Gi
